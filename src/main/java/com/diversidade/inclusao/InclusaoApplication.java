@@ -1,5 +1,9 @@
 package com.diversidade.inclusao;
 
+import com.diversidade.inclusao.entity.Candidato;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

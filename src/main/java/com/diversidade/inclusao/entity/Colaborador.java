@@ -14,6 +14,8 @@ import java.util.List;
 @Table(name = "TB_COLABORADORES")
 public class Colaborador {
     @Id
+    @SequenceGenerator(name = "seq_colab", sequenceName = "SEQ_COLAB", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_colab")
     @Column(name = "ID_COLAB")
     private Long id;
 

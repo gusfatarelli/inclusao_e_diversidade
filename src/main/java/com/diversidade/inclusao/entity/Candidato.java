@@ -12,6 +12,8 @@ import java.math.BigDecimal;
 @Table(name = "TB_CANDIDATOS")
 public class Candidato {
     @Id
+    @SequenceGenerator(name = "seq_candidato", sequenceName = "SEQ_CANDIDATO", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_candidato")
     @Column(name = "ID_CANDIDATO")
     private Long id;
 

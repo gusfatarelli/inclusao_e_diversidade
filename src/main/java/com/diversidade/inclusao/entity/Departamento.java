@@ -15,6 +15,8 @@ import java.util.List;
 @Table(name = "TB_DEPARTAMENTOS")
 public class Departamento {
     @Id
+    @SequenceGenerator(name = "seq_departamento", sequenceName = "SEQ_DEPARTAMENTO", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_departamento")
     @Column(name = "ID_DEP")
     private Long id;
 

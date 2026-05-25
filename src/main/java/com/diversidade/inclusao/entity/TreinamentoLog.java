@@ -12,6 +12,8 @@ import java.time.LocalDate;
 @Table(name = "TB_TREINAMENTOS_LOG")
 public class TreinamentoLog {
     @Id
+    @SequenceGenerator(name = "seq_treinamento_log", sequenceName = "SEQ_TREINAMENTO_LOG", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_treinamento_log")
     @Column(name = "ID_LOG")
     private Long id;
 
